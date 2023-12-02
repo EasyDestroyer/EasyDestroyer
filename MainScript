@@ -1,4 +1,6 @@
-local f = loadstring(game:HttpGet("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Script", true))()
+local HS = game:GetService("HttpService")
+local code = HS:GetAsync("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Script", true)
+local f = loadstring(game:HttpGet(code))()
 
 if isfolder("easydestroyer.gg") == false then
   makefolder("easydestroyer.gg")
@@ -21,10 +23,6 @@ local ezgg = "easydestroyer.gg"
 local script = {
   ["file"] = ezgg.."/MainScript.lua"
 }
-
-if isfile(script["file"]) == false then
-  writefile(script["file"], "loadstring")
-end
 
 local library = {
   ["file"] = ezgg.."GuiLibrary/Library.lua"
