@@ -1,1 +1,45 @@
+if isfolder("easydestroyer.gg") == false then
+  makefolder("easydestroyer.gg")
+end
 
+if isfolder("easydestroyer.gg/Assets") == false then
+  makefolder("easydestroyer.gg/Assets")
+end
+
+if isfolder("easydestroyer.gg/GuiLibrary") == false then
+  makefolder("easydestroyer.gg/GuiLibrary")
+end
+
+if isfolder("easydestroyer.gg/CustomModules") == false then
+  makefolder("easydestroyer.gg/CustomModules")
+end
+
+local ezgg = "easydestroyer.gg"
+
+local script = {
+  ["file"] = ezgg.."/MainScript.lua"
+}
+
+if isfile(script["file"]) == false then
+  writefile(script["file"], "loadstring")
+end
+
+local library = {
+  ["file"] = ezgg.."GuiLibrary/Library.lua"
+}
+
+local cm = {
+  ["file"] = ezgg.."CustomModules/"..game.PlaceId..".lua"
+}
+
+if isfile(script["file"]) == false then
+  writefile(script["file"], "loadstring")
+end
+
+if isfile(library["file"]) == false then
+  writefile(library["file"], "loadstring")
+end
+
+if isfile(cm["file"]) == false then
+  writefile(cm["file"], "-- {}")
+end
