@@ -37,7 +37,7 @@ if isfile(script["file"]) == false then
 end
 
 if isfile(library["file"]) == false then
-  writefile(library["file"], "loadstring(game:HttpGet('https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua'))()")
+  writefile(library["file"], "loadstring(game:HttpGet('https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer/main/GuiLibrary'))()")
 end
 
 if isfile(cm["file"]) == false then
