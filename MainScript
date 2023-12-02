@@ -1,6 +1,4 @@
-local HS = game:GetService("HttpService")
-local code = HS:GetAsync("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Script", true)
-local f = loadstring(game:HttpGet(code))()
+local f = loadstring(game:HttpGet('https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Script', true))()
 
 if isfolder("easydestroyer.gg") == false then
   makefolder("easydestroyer.gg")
