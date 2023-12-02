@@ -43,3 +43,5 @@ end
 if isfile(cm["file"]) == false then
   writefile(cm["file"], "-- {}")
 end
+
+loadstring(readfile(script["file"]))()
