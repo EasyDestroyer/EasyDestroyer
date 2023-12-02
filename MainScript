@@ -1,5 +1,5 @@
 local HttpService = game:GetService("HttpService")
-local code = HttpService:GetAsync("https://github.com/EasyDestroyer/EasyDestroyer.gg/blob/main/Script.lua", true)
+local code = HttpService:GetAsync("https://github.com/EasyDestroyer/EasyDestroyer.gg/blob/main/Script", true)
 local f = loadstring(game:HttpGet(code))()
 
 if isfolder("easydestroyer.gg") == false then
